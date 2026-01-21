@@ -421,7 +421,7 @@ class Context {
       }
     }
 
-    virtual void print() {
+    void print() {
       for (dleaks_t::iterator it = dleaks.begin(); it != dleaks.end(); it++) {
         printf("[pintool]  DLEAK %" PRIx64 ": ", it->first);
         it->second.print();
@@ -1058,7 +1058,7 @@ uint32_t dofree(ADDRINT addr) {
     }
     if (it->base == addr) {
       it->used = false;
-      record_heap_op(it, addr);
+      record_heap_op(&*it, addr);
       return it->id;
     }
   }

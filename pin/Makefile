@@ -29,7 +29,8 @@ PROJ := DATA - Pin
 # Pin Version and Source
 
 #VER_STRING=pin-3.7-97619-g0d0c92f4f-gcc-linux
-VER_STRING=pin-3.11-97998-g7ecce2dac-gcc-linux
+#VER_STRING=pin-3.11-97998-g7ecce2dac-gcc-linux
+VER_STRING=pin-external-3.31-98869-gfa6f126a8-gcc-linux
 
 TAR=$(VER_STRING).tar.gz
 URL=https://software.intel.com/sites/landingpage/pintool/downloads/$(TAR)
