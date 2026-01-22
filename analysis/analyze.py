@@ -844,7 +844,7 @@ def specific_leakage_test(random, callback, LeaksOnly=True, mp=False):
 
         # postprocessing -- type3
         for c in rdic_pos.keys():
-            rdic_pos[c] = numpy.array(rdic_pos[c], dtype=numpy.int)
+            rdic_pos[c] = numpy.array(rdic_pos[c], dtype=int)
 
         # Extract X in correct order
         X = numpy.asarray([Xglob[k] for k in keys])
